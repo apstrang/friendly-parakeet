@@ -1,4 +1,23 @@
+//ARRAYS
 
+//Uppercase letters
+
+var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+
+//Lowercase letters
+
+var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+
+//Numbers
+
+var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+
+//Special characters
+
+var special = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?", "'", ";", ":", "-", "_", "+", "=", "/"];
 
 // Assignment code here
 
@@ -66,79 +85,146 @@ function generatePassword() {
     }
 
 //ABCD
+
+
 if (passwordUppercase === true && passwordLowercase === true && passwordNumbers === true && passwordSpecial === true) {
   console.log ("Password will contain uppercase letters, lowercase letters, numbers and special characters");
+  var conditionABCD = [uppercase, lowercase, numbers, special]; {
+  
+
+  }
+
+  
 }
 
+
+
 //ABC
+var conditionABC = [uppercase, lowercase, numbers];
+
 if (passwordUppercase === true && passwordLowercase === true && passwordNumbers === true && passwordSpecial === false) {
   console.log ("Password will contain uppercase letters, lowercase letters and numbers");
 }
 
+
+
 //AB
+var conditionAB = [uppercase, lowercase];
+
 if (passwordUppercase === true && passwordLowercase === true && passwordNumbers === false && passwordSpecial === false) {
   console.log ("Password will contain uppercase letters and lowercase letters");
 }
 
+
+
 //A
+var conditionA = uppercase; 
+
 if (passwordUppercase === true && passwordLowercase === false && passwordNumbers === false && passwordSpecial === false) {
   console.log ("Password will contain uppercase letters");
 }
 
+
+
 //ABD
+var conditionABD = [uppercase, lowercase, special];
+
 if (passwordUppercase === true && passwordLowercase === true && passwordNumbers === false && passwordSpecial === true) {
   console.log ("Password will contain uppercase letters, lowercase letters and special characters");
 }
 
+
+
 //ACD
+var conditionACD = [uppercase, numbers, special];
+
 if (passwordUppercase === true && passwordLowercase === false && passwordNumbers === true && passwordSpecial === true) {
   console.log ("Password will contain uppercase letters, numbers and special characters");
 }
 
+
+
 //AC
+var conditionAC = [uppercase, numbers];
+
 if (passwordUppercase === true && passwordLowercase === false && passwordNumbers === true && passwordSpecial === false) {
   console.log ("Password will contain uppercase letters and numbers");
 }
 
+
+
 //AD
+var conditionAD = [uppercase, special];
+
 if (passwordUppercase === true && passwordLowercase === false && passwordNumbers === false && passwordSpecial === true) {
   console.log ("Password will contain uppercase letters and special characters");
 }
 
+
+
 //BCD
+var conditionBCD = [lowercase, numbers, special];
+
 if (passwordUppercase === false && passwordLowercase === true && passwordNumbers === true && passwordSpecial === true) {
   console.log ("Password will contain lowercase letters, numbers and special characters");
 }
 
+
+
 //BC
+var conditionBC = [lowercase, numbers];
+
 if (passwordUppercase === false && passwordLowercase === true && passwordNumbers === true && passwordSpecial === false) {
   console.log ("Password will contain lowercase letters and numbers");
 }
 
+
+
 //BD
+var conditionBD = [lowercase, special];
+
 if (passwordUppercase === false && passwordLowercase === true && passwordNumbers === false && passwordSpecial === true) {
   console.log ("Password will contain lowercase letters and special characters");
 }
 
+
+
 //B
+var conditionB = lowercase;
+
 if (passwordUppercase === false && passwordLowercase === true && passwordNumbers === false && passwordSpecial === false) {
   console.log ("Password will contain lowercase letters");
 }
 
+
+
 //CD
+var conditionCD = [numbers, special];
+
 if (passwordUppercase === false && passwordLowercase === false && passwordNumbers === true && passwordSpecial === true) {
   console.log ("Password will contain numbers and special characters");
 }
 
+
+
 //C
+var conditionC = numbers;
+
 if (passwordUppercase === false && passwordLowercase === false && passwordNumbers === true && passwordSpecial === false) {
   console.log ("Password will contain numbers");
 }
 
+
+
 //D
+var conditionD = special; 
+
 if (passwordUppercase === false && passwordLowercase === false && passwordNumbers === false && passwordSpecial === true) {
   console.log ("Password will contain special characters");
 }
+
+
+
 
 
 }
