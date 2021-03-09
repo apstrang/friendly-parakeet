@@ -101,7 +101,6 @@ if (passwordUppercase === true && passwordLowercase === true && passwordNumbers 
     }
 
     console.log(pass);
-    //return pass;
 
 }
 
@@ -360,7 +359,7 @@ if (passwordUppercase === false && passwordLowercase === false && passwordNumber
 }
 
 
-
+return pass;
 
 
 }
@@ -374,6 +373,7 @@ function writePassword() {
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  
 
   passwordText.value = password;
 
