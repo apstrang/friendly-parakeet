@@ -85,18 +85,26 @@ function generatePassword() {
 
 
 
+//all conditions and outputs
 
 //ABCD
 
 
 if (passwordUppercase === true && passwordLowercase === true && passwordNumbers === true && passwordSpecial === true) {
   console.log ("Password will contain uppercase letters, lowercase letters, numbers and special characters");
+  //define variable "pass" as a string
     var pass = '';
+    //define string based on input conditions
     var conditionABCD = uppercase + lowercase + numbers + special;
+    //log string of characters to be used in the password
     console.log(conditionABCD);
 
+    //for loop to iterate through the generated string passwordLength amount of times
+
     for (i = 1; i <= passwordLength; i++) {
+      //define variable "char" to randomly pick a character from the string
       var char = Math.floor(Math.random() * conditionABCD.length);
+      //variable "pass" puts together the outputs of each iteration of the for loop until the output string is passwordLength number of characters
       pass += conditionABCD.charAt(char)
     }
 
@@ -358,8 +366,9 @@ if (passwordUppercase === false && passwordLowercase === false && passwordNumber
     console.log(pass);
 }
 
-
+//return "pass" as output of the function generatePassword() based on which conditional is triggered by user input
 return pass;
+//"pass" becomes "password" below and passwordText.value is filled in with the random password
 
 
 }
